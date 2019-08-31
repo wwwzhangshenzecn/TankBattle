@@ -10,7 +10,7 @@ Bullet::Bullet(Point pos, Dir dir, COLORREF color)
 	m_dir = dir;
 	m_color = color;
 
-	m_step = 20;
+	m_step = 20 + Setting::GetGameLevel()*2;
 	m_bDisapper = false;
 
 	CalculateSphare();
